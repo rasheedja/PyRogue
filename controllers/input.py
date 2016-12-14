@@ -19,12 +19,12 @@ class InputController:
             True if the user has entered the 'Exit Game' command
         """
         if user_input.key == 'UP' or user_input.char == 'w':
-            self.player.move_player_up()
+            self.player.move_up()
         elif user_input.key == 'DOWN' or user_input.char == 's':
-            self.player.move_player_down()
+            self.player.move_down()
         elif user_input.key == 'LEFT' or user_input.char == 'a':
-            self.player.move_player_left()
+            self.player.move_left()
         elif user_input.key == 'RIGHT' or user_input.char == 'd':
-            self.player.move_player_right()
+            self.player.move_right()
         elif user_input.key == 'ESCAPE':
             return True
