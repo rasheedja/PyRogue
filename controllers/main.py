@@ -56,7 +56,3 @@ class GameController:
 
             if exit_game:
                 exit()
-
-if __name__ == "__main__":
-    game_controller = GameController(80, 50, 20)
-    game_controller.main()
